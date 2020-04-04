@@ -1,6 +1,25 @@
 <html>
  <!--加载CSS-->
  <head>
+ <style>
+	* {
+    margin: 0;
+    padding: 0;
+	-webkit-filter: grayscale(80%);
+	}
+	body:before {
+    content: '';
+	z-index: -1;
+    filter: grayscale(100%);
+	background-size: cover;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+
+	}
+</style>
   <title>RealTrainMod追加包发布系统</title>
   <link rel="shortcut icon" href="ras.ico" />
  </head>
@@ -49,7 +68,6 @@
     	background-color: white;
     	color: black;
 		}
-
 	</style>
     <!--css加载完毕-->
 	
@@ -67,7 +85,7 @@
         var randomBgIndex = Math.round( Math.random() * 4 );
 
     	//输出随机的背景图
-        document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ') no-repeat 50% 0;margin:0px;}</style>');
+        document.write('<style>body:before{background:url(' + bodyBgs[randomBgIndex] + ');no-repeat 50% 0;margin:0px;}</style>');
     	//]]>
     </script><!--js环节结束-->
 
@@ -92,7 +110,7 @@
 		<h2><font face="微软雅黑">这个东西有病毒吗？</font></h2>
 		<p>
 			<font size="3" face="微软雅黑">
-			这个程序是用E语言编写，所以有可能会误报。但👴以👴的人格担保，我没有添加任何危害宁系统的代码，👴正尽力去做防止误报的措施。
+			这个程序是用E语言编写，所以有可能会误报。但??以??的人格担保，我没有添加任何危害宁系统的代码，??正尽力去做防止误报的措施。
 			</font>
 		</p>
 
@@ -100,7 +118,7 @@
 		<p>
 			<font size="3" face="微软雅黑">
 			1.首先恁需要下载到一个位置，然后打开并注册，注册是需要答题的，目的是为了防止伸手党入侵。<br>
-			2.至于题有多难，这不是👴的事，有多难都关👴屁事。<br>
+			2.至于题有多难，这不是??的事，有多难都关??屁事。<br>
 			3.若恁通过答题，那么就可以成为正式会员(Lv.2及以上)。<font color=red>注意，若不答题，则用户等级会锁在Lv.1，用户功能将收到限制。如果恁在使用过程中被举报是伸手党，那么将被永久封禁。</font><br>
 			4.由于服务器运营需要资本，所以暂时使用本人进行映射实现服务器且不会在偏僻时段开启，一般会在白天开启服务器。
 			</font>
