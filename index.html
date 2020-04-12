@@ -1,24 +1,7 @@
 <html>
  <!--加载CSS-->
  <head>
- <style>
-	* {
-    margin: 0;
-    padding: 0;
-	}
-	body:before {
-    content: '';
-	z-index: -1;
-	background-size: cover;
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	-webkit-filter: grayscale(90%);
-	filter: grayscale(90%);
-	}
-</style>
+
   <title>RealTrainMod追加包发布系统</title>
   <link rel="shortcut icon" href="ras.ico" />
  </head>
@@ -57,7 +40,7 @@
     	border: 3px solid white;
 		position: relative;
 		margin:0 auto;
-		width: 290px;
+		width: 230px;
 		border-radius: 4px;
 		margin-left:20px;
 		margin-right:20px;
@@ -84,7 +67,7 @@
         var randomBgIndex = Math.round( Math.random() * 4 );
 
     	//输出随机的背景图
-        document.write('<style>body:before{background:url(' + bodyBgs[randomBgIndex] + ');no-repeat 50% 0;margin:0px;}</style>');
+        document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ');no-repeat 50% 0;margin:0px;}</style>');
     	//]]>
     </script><!--js环节结束-->
 
@@ -93,8 +76,8 @@
 	<center><div id="downloadb" class="download">
 		<h1><font size="16" face="微软雅黑">RealTrainMod追加发布系统</font></h1>
 		<p><font size="4" face="微软雅黑">一个RTM追加包的发布、下载平台(大嘘)</font></p>
-		<button class="button button1" style="top:180;font-size:40;">下载</br><font size="3" face="微软雅黑">Download v1.0</font></button>
-		<button class="button button1" style="top:180;font-size:40;">更多详情<br><font size="3" face="微软雅黑">了解更多信息</font></button>
+		<a class="button button1" style="top:180;font-size:40;" href="https://raw.githubusercontent.com/ABSD546316187/RTMAddSystem/master/download/RTMAS1.0.0.zip">下载</br><font size="3" face="微软雅黑">Download v1.0</font></a>
+		<a class="button button1" style="top:180;font-size:40;">更多详情<br><font size="3" face="微软雅黑">了解更多信息</font></a>
 	</div></center>
 	<!---->
 	<div id="main" class="main" style="background-color:white;clear:both;top:100%;position: absolute;width: 100%;">
